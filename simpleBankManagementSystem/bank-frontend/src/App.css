@@ -1,0 +1,27 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: #1a1a1a;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+}

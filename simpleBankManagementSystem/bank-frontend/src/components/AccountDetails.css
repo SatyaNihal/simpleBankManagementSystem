@@ -1,0 +1,100 @@
+.account-details {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.account-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card.balance {
+  background-color: #3a3a3a;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.info-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.transaction-section {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.transaction-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.btn-deposit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-deposit:hover {
+  background-color: #43a047;
+}
+
+.btn-withdraw {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-withdraw:hover {
+  background-color: #e53935;
+}
+
+.btn-secondary {
+  background-color: #555;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #666;
+}
+
+.success-message {
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Media query adjustments for small screens */
+@media (max-width: 600px) {
+  .account-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .transaction-section {
+    padding: 1rem;
+  }
+}
